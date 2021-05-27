@@ -1,7 +1,6 @@
 export default {
   grid: {
-    container: '130rem',
-    gutter: '3.2rem',
+    container: '10.4rem',
   },
 
   border: {
@@ -9,48 +8,33 @@ export default {
   },
 
   font: {
-    family:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    light: 300,
+    family: "'Roboto', sans-serif",
     normal: 400,
-    bold: 600,
+    bold: 700,
+    xbold: 900,
 
     sizes: {
-      xsmall: '1.2rem',
-      small: '1.4rem',
+      xsmall: '1.0rem',
+      small: '1.2rem',
       medium: '1.6rem',
-      large: '1.8rem',
-      xlarge: '2.0rem',
-      xxlarge: '2.8rem',
+      large: '2.4rem',
+      xlarge: '4.0rem',
     },
   },
 
   colors: {
-    primary: '#F231A5',
-    secondary: '#3CD3C1',
-    mainBg: '#06092B',
-    white: '#FAFAFA',
-    black: '#030517',
-    lightGray: '#EAEAEA',
-    gray: '#8F8F8F',
-    darkGray: '#2E2F42',
+    primary: '#E62429',
+    secondary: '#C6A972',
+    white: '#FFF',
+    black: '#202020',
   },
 
   spacings: {
     xxsmall: '0.8rem',
-    xsmall: '1.6rem',
+    xsmall: '1.2rem',
     small: '2.4rem',
     medium: '3.2rem',
     large: '4.0rem',
     xlarge: '4.8rem',
-    xxlarge: '5.6rem',
-  },
-
-  layers: {
-    base: 10,
-    menu: 20,
-    overlay: 30,
-    modal: 40,
-    alwaysOnTop: 50,
   },
 };
