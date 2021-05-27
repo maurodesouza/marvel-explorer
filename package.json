@@ -14,6 +14,7 @@
     "generate": "plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
+    "@styled-icons/material": "^10.28.0",
     "next": "10.1.3",
     "next-pwa": "^5.2.21",
     "react": "17.0.2",
