@@ -1,7 +1,13 @@
 import { ThemeProvider } from 'styled-components';
 import { render, RenderResult } from '@testing-library/react';
 
+import { FavoriteHeroesProvider } from 'hooks/useFavoriteHeroes';
+
 import theme from 'styles/theme/default';
 
 export const renderWithTheme = (children: React.ReactNode): RenderResult =>
-  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
+  render(
+    <ThemeProvider theme={theme}>
+      <FavoriteHeroesProvider>{children}</FavoriteHeroesProvider>
+    </ThemeProvider>
+  );
