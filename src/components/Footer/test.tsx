@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react';
-import { renderWithTheme } from 'utils/test/helpers';
+import { renderWithProviders } from 'utils/test/helpers';
 
 import Footer from '.';
 
 describe('<Footer />', () => {
   it('should render the footer content correct', () => {
-    renderWithTheme(<Footer />);
+    renderWithProviders(<Footer />);
 
     const linkText = 'Mauro de Souza';
     const copy = 'Data provided by Marvel. © 2020 MARVEL';
@@ -23,7 +23,7 @@ describe('<Footer />', () => {
   });
 
   it('should render the footer styles correct', () => {
-    const { container } = renderWithTheme(<Footer />);
+    const { container } = renderWithProviders(<Footer />);
 
     const footer = container.firstChild;
 

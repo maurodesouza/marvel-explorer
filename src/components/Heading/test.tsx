@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { renderWithTheme } from 'utils/test/helpers';
+import { renderWithProviders } from 'utils/test/helpers';
 
 import theme from 'styles/theme/default';
 import Heading from '.';
@@ -8,7 +8,7 @@ describe('<Heading />', () => {
   it('should render the heading with children', () => {
     const text = 'Just a text to test';
 
-    renderWithTheme(<Heading>{text}</Heading>);
+    renderWithProviders(<Heading>{text}</Heading>);
 
     const heading = screen.getByRole('heading', { name: text });
 
@@ -40,7 +40,7 @@ describe('<Heading />', () => {
   it('should render the heading with correct styles', () => {
     const text = 'Just a text to test';
 
-    renderWithTheme(<Heading>{text}</Heading>);
+    renderWithProviders(<Heading>{text}</Heading>);
 
     const heading = screen.getByRole('heading', { name: text });
 

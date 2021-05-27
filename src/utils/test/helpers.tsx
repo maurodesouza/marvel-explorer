@@ -5,7 +5,7 @@ import { FavoriteHeroesProvider } from 'hooks/useFavoriteHeroes';
 
 import theme from 'styles/theme/default';
 
-export const renderWithTheme = (children: React.ReactNode): RenderResult =>
+export const renderWithProviders = (children: React.ReactNode): RenderResult =>
   render(
     <ThemeProvider theme={theme}>
       <FavoriteHeroesProvider>{children}</FavoriteHeroesProvider>

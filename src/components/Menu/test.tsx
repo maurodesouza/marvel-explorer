@@ -1,11 +1,11 @@
 import { fireEvent, screen } from '@testing-library/react';
-import { renderWithTheme } from 'utils/test/helpers';
+import { renderWithProviders } from 'utils/test/helpers';
 
 import Menu from '.';
 
 describe('<Menu />', () => {
   it('should render the menu correct', () => {
-    renderWithTheme(<Menu />);
+    renderWithProviders(<Menu />);
 
     expect(screen.getByRole('img', { name: /marvel/i })).toBeInTheDocument();
 
@@ -28,7 +28,7 @@ describe('<Menu />', () => {
   });
 
   it('should open/close full menu', () => {
-    renderWithTheme(<Menu />);
+    renderWithProviders(<Menu />);
 
     const openMenuElement = screen.getByLabelText(/open menu/i);
     const closeMenuElement = screen.getByLabelText(/close menu/i);
@@ -50,7 +50,7 @@ describe('<Menu />', () => {
   });
 
   it('should render the menu styles correct', () => {
-    const { container } = renderWithTheme(<Menu />);
+    const { container } = renderWithProviders(<Menu />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
