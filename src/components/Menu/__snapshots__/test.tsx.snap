@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should render the menu styles correct 1`] = `
+.c8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c1 {
+  width: 100%;
+  height: 3.2rem;
+  max-width: 8rem;
+}
+
+.c11 {
+  text-align: center;
+  max-width: 57rem;
+  border-top: 4px solid #C6A972;
+  padding-top: calc(4.0rem / 2);
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
+.c12 {
+  margin-bottom: 1.2rem;
+}
+
+.c12 a {
+  color: #FFF;
+}
+
+.c12 a:hover {
+  color: #C6A972;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  font-weight: 700;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 {
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 4.0rem;
+}
+
+.c4 + .c4 {
+  margin-top: 2.4rem;
+}
+
+.c7 {
+  color: #FFF;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.c9 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #202020;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 2.4rem;
+}
+
+.c9 .c6 {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+
+.c9 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translateY(3.2rem);
+  -ms-transform: translateY(3.2rem);
+  transform: translateY(3.2rem);
+}
+
+.c9 .c10 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translateY(3.2rem);
+  -ms-transform: translateY(3.2rem);
+  transform: translateY(3.2rem);
+}
+
+@media (min-width:768px) {
+  .c1 {
+    height: 5rem;
+    max-width: 12.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: initial;
+    -webkit-justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    position: relative;
+    font-size: 2.4rem;
+  }
+
+  .c4 + .c4 {
+    margin-top: 0;
+    margin-left: calc(4.0rem * 2);
+  }
+
+  .c5:hover::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #C6A972;
+    height: 2px;
+    -webkit-animation: hoverAnimation 0.2s forwards;
+    animation: hoverAnimation 0.2s forwards;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    display: none;
+  }
+}
+
+<menu
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      aria-label="Marvel"
+      fill="none"
+      height="100%"
+      role="img"
+      viewBox="0 0 125 50"
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.961538 0H0V0.961538H0.961538V0Z"
+        fill="#EC1D24"
+      />
+      <path
+        d="M0 0H125V50H0V0Z"
+        fill="#EC1D24"
+      />
+      <path
+        d="M30.2885 46.1539V3.84619H20.4722L16.9722 25.7068L13.5597 3.84619H3.84619V46.1539H11.5385V25.7616L14.9779 46.1539H19.0443L22.475 25.7616V46.1539H30.2885Z"
+        fill="#FEFEFE"
+      />
+      <path
+        d="M121.367 38.5183V46.1202H107.289V3.84619H114.87V38.5183H121.367ZM61.2097 24.576C60.6231 24.8587 60.0097 24.9991 59.4116 25.001V11.4048H59.45C60.0481 11.4 64.5116 11.5818 64.5116 18.1289C64.5116 21.551 62.9923 23.7097 61.2097 24.576ZM38.9904 32.9231L41.0895 14.8472L43.2673 32.9231H38.9904ZM105.966 11.5625V3.85292H84.4991L80.9654 29.602L77.475 3.85196H69.7327L70.5991 10.727C69.7068 8.96542 66.5375 3.85196 59.5606 3.85196C59.5154 3.85004 51.8106 3.85196 51.8106 3.85196L51.7808 41.3827L46.1385 3.85292L35.9991 3.84811L30.1606 42.7327L30.1625 3.85292H20.4597L16.9616 25.6962L13.5539 3.85196H3.84619V46.127H11.4904V25.75L14.9693 46.127H19.0327L22.4606 25.75V46.127H37.1981L38.0904 39.625H44.0231L44.9145 46.127L59.3827 46.1347H59.3923V46.127H59.4116V32.4058L61.1856 32.1462L64.8558 46.1366H72.3404L72.3385 46.127H72.3596L67.5414 29.7347C69.9818 27.927 72.7395 23.3462 72.0058 18.9625V18.9606C72.0135 19.0164 76.5529 46.1539 76.5529 46.1539L85.4529 46.1279L91.5366 7.81061V46.1279H105.966V38.5241H99.1164V28.8318H105.966V21.1106H99.1164V11.5616H105.966V11.5625Z"
+        fill="#FEFEFE"
+      />
+    </svg>
+  </div>
+  <nav
+    class="c2 c3"
+  >
+    <a
+      class="c4 c5"
+      href="/"
+    >
+      Search
+    </a>
+    <a
+      class="c4 c5"
+      href="/favorites"
+    >
+      Favorites
+    </a>
+  </nav>
+  <div
+    class="c6 c7"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Open menu"
+      class="c8"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      />
+    </svg>
+  </div>
+  <div
+    aria-hidden="true"
+    class="c9"
+  >
+    <div
+      class="c6 c7"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Close menu"
+        class="c8"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </div>
+    <nav
+      class="c2 c3"
+    >
+      <a
+        class="c4 c5"
+        href="/"
+      >
+        Search
+      </a>
+      <a
+        class="c4 c5"
+        href="/favorites"
+      >
+        Favorites
+      </a>
+    </nav>
+    <footer
+      class="c10 c11"
+    >
+      <p
+        class="c12"
+      >
+        Made with ❤ by
+         
+        <a
+          href="https://www.linkedin.com/in/maurodesouzaa/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Mauro de Souza
+        </a>
+         
+      </p>
+      <p
+        class="c13"
+      >
+        Data provided by Marvel. © 2020 MARVEL
+      </p>
+    </footer>
+  </div>
+</menu>
+`;
