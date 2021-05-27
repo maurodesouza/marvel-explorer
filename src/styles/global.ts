@@ -49,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.large};
     }
+
+    body {
+      background: ${theme.colors.black};
     }
   `}
 `;
