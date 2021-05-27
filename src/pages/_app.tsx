@@ -17,6 +17,12 @@ const App = ({ Component, pageProps }: AppProps) => {
           name="description"
           content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
