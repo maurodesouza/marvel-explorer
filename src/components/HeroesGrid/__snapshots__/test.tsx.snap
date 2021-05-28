@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroesGrid /> should render the HeroesGrid styles correct 1`] = `
+.c0 {
+  width: 100%;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit,minmax(12.8rem,1fr));
+}
+
+@media (min-width:450px) {
+  .c0 {
+    gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+  }
+}
+
+<div
+  class="c0"
+/>
+`;
