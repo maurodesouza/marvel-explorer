@@ -3,9 +3,12 @@
 exports[`<Footer /> should render the footer styles correct 1`] = `
 .c0 {
   text-align: center;
+  width: 100%;
   max-width: 57rem;
   border-top: 4px solid #C6A972;
   padding-top: calc(4.0rem / 2);
+  margin-top: 4.0rem;
+  padding-bottom: 2.4rem;
   color: #FFF;
   font-size: 1.2rem;
 }

@@ -4,6 +4,7 @@ import media from 'styled-media-query';
 import * as FooterStyles from 'components/Footer/styles';
 
 export const Container = styled.menu`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +102,8 @@ export const MenuFull = styled.div<MenuFullProps>`
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    padding-bottom: ${theme.spacings.small};
+    padding: 0 ${theme.spacings.small} 0;
+    z-index: 10;
 
     ${IconWrapper} {
       position: absolute;
@@ -120,5 +122,9 @@ export const MenuFull = styled.div<MenuFullProps>`
       transition: transform 0.2s;
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3.2rem)'};
     }
+
+    ${media.greaterThan('medium')`
+      display: none;
+    `}
   `}
 `;

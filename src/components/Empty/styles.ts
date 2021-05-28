@@ -16,7 +16,7 @@ export const Image = styled.img`
 export const Content = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.medium};
     max-width: 40rem;
     text-align: center;
 

@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components';
-import media from 'styled-media-query';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    width: 12.8rem;
+    width: 100%;
     height: 31.5rem;
     background-color: ${theme.colors.white};
     display: flex;
@@ -23,11 +22,6 @@ export const Container = styled.div`
       border-top-color: transparent;
       border-left-color: transparent;
     }
-
-    ${media.greaterThan('medium')`
-      width: 100%;
-      max-width: 17.7rem;
-    `}
   `}
 `;
 

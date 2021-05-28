@@ -23,7 +23,7 @@ exports[`<Empty /> should render the empty styles correct 1`] = `
 
 .c2 {
   color: #FFF;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   max-width: 40rem;
   text-align: center;
 }

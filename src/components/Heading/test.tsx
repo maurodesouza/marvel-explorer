@@ -16,16 +16,25 @@ describe('<Heading />', () => {
 
     expect(heading).toMatchInlineSnapshot(`
       .c0 {
+        margin-top: 4.8rem;
         color: #FFF;
         font-weight: 900;
         font-size: 2.4rem;
-        max-width: 55rem;
+        max-width: 33rem;
         text-align: center;
+      }
+
+      @media (min-width:450px) {
+        .c0 {
+          font-size: calc(1.6rem * 2);
+          max-width: 44rem;
+        }
       }
 
       @media (min-width:768px) {
         .c0 {
           font-size: 4.0rem;
+          max-width: 55rem;
         }
       }
 

@@ -15,9 +15,12 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
 
 .c11 {
   text-align: center;
+  width: 100%;
   max-width: 57rem;
   border-top: 4px solid #C6A972;
   padding-top: calc(4.0rem / 2);
+  margin-top: 4.0rem;
+  padding-bottom: 2.4rem;
   color: #FFF;
   font-size: 1.2rem;
 }
@@ -41,6 +44,7 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116,7 +120,8 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  padding-bottom: 2.4rem;
+  padding: 0 2.4rem 0;
+  z-index: 10;
 }
 
 .c9 .c6 {
@@ -203,6 +208,12 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
 
 @media (min-width:768px) {
   .c7 {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     display: none;
   }
 }
