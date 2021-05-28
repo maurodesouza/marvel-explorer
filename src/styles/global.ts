@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body,
   #__next {
-    min-height: 100vh;
+    height: 100%;
   }
 
   ul,
