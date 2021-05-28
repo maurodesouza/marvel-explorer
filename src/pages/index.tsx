@@ -1,7 +1,7 @@
-import Main from 'components/Main';
+import HomeTemplate from 'templates/Home';
 
 const Home = () => {
-  return <Main />;
+  return <HomeTemplate />;
 };
 
 export default Home;
