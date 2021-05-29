@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
