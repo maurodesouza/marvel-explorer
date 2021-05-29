@@ -92,7 +92,7 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
 }
 
 .c9 {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -121,7 +121,7 @@ exports[`<Menu /> should render the menu styles correct 1`] = `
   flex-direction: column;
   overflow: hidden;
   padding: 0 2.4rem 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .c9 .c6 {

@@ -86,7 +86,7 @@ type MenuFullProps = {
 
 export const MenuFull = styled.div<MenuFullProps>`
   ${({ theme, isOpen }) => css`
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -103,7 +103,7 @@ export const MenuFull = styled.div<MenuFullProps>`
     flex-direction: column;
     overflow: hidden;
     padding: 0 ${theme.spacings.small} 0;
-    z-index: 10;
+    z-index: 20;
 
     ${IconWrapper} {
       position: absolute;
