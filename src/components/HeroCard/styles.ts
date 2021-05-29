@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -52,21 +53,23 @@ export const HeroContent = styled.div`
       cursor: pointer;
     }
 
-    &:hover {
-      &::after {
-        height: 100%;
-      }
+    ${media.greaterThan('large')`
+      &:hover {
+        &::after {
+          height: 100%;
+        }
 
-      ${IconWrapper} {
-        color: ${theme.colors.white};
-        cursor: pointer;
-      }
+        ${IconWrapper} {
+          color: ${theme.colors.white};
+          cursor: pointer;
+        }
 
-      ${HeroName} {
-        color: ${theme.colors.white} !important;
-        pointer-events: none;
+        ${HeroName} {
+          color: ${theme.colors.white} !important;
+          pointer-events: none;
+        }
       }
-    }
+    `}
   `}
 `;
 

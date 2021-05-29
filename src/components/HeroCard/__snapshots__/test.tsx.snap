@@ -65,20 +65,6 @@ exports[`<HeroCard /> should render the hero card styles correct 1`] = `
   cursor: pointer;
 }
 
-.c2:hover::after {
-  height: 100%;
-}
-
-.c2:hover .c5 {
-  color: #FFF;
-  cursor: pointer;
-}
-
-.c2:hover .c3 {
-  color: #FFF !important;
-  pointer-events: none;
-}
-
 .c6 {
   width: 2.4rem;
   height: 2.4rem;
@@ -101,6 +87,22 @@ exports[`<HeroCard /> should render the hero card styles correct 1`] = `
   color: #202020;
   text-transform: uppercase;
   z-index: 10;
+}
+
+@media (min-width:1170px) {
+  .c2:hover::after {
+    height: 100%;
+  }
+
+  .c2:hover .c5 {
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  .c2:hover .c3 {
+    color: #FFF !important;
+    pointer-events: none;
+  }
 }
 
 <div
