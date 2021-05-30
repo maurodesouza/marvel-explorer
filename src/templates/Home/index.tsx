@@ -71,7 +71,7 @@ const HomeTemplate = () => {
         </ShowWhen>
 
         <ShowWhen condition={!loading && !!heroes.length}>
-          <HeroesGrid>
+          <HeroesGrid applyAutoFit={heroes.length >= 4}>
             {heroes.map(hero => (
               <HeroCard
                 key={hero.id}
