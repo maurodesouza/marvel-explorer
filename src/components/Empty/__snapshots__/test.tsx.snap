@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Empty /> should render the empty styles correct 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 44rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  width: 100%;
+}
+
+.c2 {
+  color: #FFF;
+  font-size: 1.6rem;
+  max-width: 40rem;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 2.4rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="A magnifying glass with sad face and with some bubbles in the background"
+    class="c1"
+    src="/images/no-search.svg"
+  />
+  <div
+    class="c2"
+  >
+    Some text
+  </div>
+</div>
+`;

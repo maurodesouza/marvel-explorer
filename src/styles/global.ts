@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
+import media from 'styled-media-query';
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -10,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
@@ -19,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body,
   #__next {
-    min-height: 100vh;
+    height: 100%;
   }
 
   ul,
@@ -47,7 +49,23 @@ const GlobalStyles = createGlobalStyle`
     input,
     textarea {
       font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.large};
+    }
+
+    body {
+      background: ${theme.colors.black};
+    }
+
+    #__next {
+      padding: ${theme.spacings.xxsmall} ${theme.spacings.xxsmall} 0;
+
+      ${media.greaterThan('small')`
+        padding: ${theme.spacings.xsmall} ${theme.spacings.xsmall} 0;
+      `}
+
+      ${media.greaterThan('medium')`
+        padding: ${theme.spacings.small} ${theme.spacings.small} 0;
+      `}
     }
   `}
 `;

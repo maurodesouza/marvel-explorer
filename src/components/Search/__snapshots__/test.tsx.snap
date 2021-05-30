@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> should render the search styles correct 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 40rem;
+  position: relative;
+  margin-top: 3.2rem;
+  margin-bottom: 4.0rem;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #FFF;
+  padding: 1.2rem;
+  color: #202020;
+  font-size: 1.6rem;
+  border: 0;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #202020;
+}
+
+.c3::-moz-placeholder {
+  color: #202020;
+}
+
+.c3:-ms-input-placeholder {
+  color: #202020;
+}
+
+.c3::placeholder {
+  color: #202020;
+}
+
+.c4 {
+  background-color: #E62429;
+  padding: 0 2.4rem;
+  color: #FFF;
+  font-size: 1.6rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 0 0.4rem 0.4rem 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.c4:hover {
+  opacity: 0.8;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 57rem;
+    margin-top: calc(4.0rem * 2);
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding: 2.4rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c4 {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding: 0 4.0rem;
+    font-size: 2.4rem;
+  }
+}
+
+<form
+  class="c0"
+>
+  <label
+    class="c1"
+    for="search"
+  >
+    Type the name of your hero
+    <div
+      class="c2"
+    >
+      <input
+        class="c3"
+        id="search"
+        placeholder="Ex: iron main"
+      />
+      <button
+        class="c4"
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+  </label>
+</form>
+`;
