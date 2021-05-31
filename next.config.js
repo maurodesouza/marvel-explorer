@@ -7,4 +7,8 @@ module.exports = withPWA({
     dest: 'public',
     disable: !isProd,
   },
+
+  images: {
+    domains: ['i.annihil.us'],
+  },
 });
