@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext } from 'react';
+import { getStorageItem, setStorageItem } from 'utils/storage';
 
 export type HeroData = {
   heroId: number;
@@ -17,7 +18,7 @@ type FavoriteHeroesProviderProps = {
   children: React.ReactNode;
 };
 
-export const storageKey = '@MarvelExplorer:favorite_heroes';
+export const storageKey = 'favorite_heroes';
 
 const FavoriteHeroesContext = createContext<FavoriteHeroesContextData>(
   {} as FavoriteHeroesContextData
@@ -25,19 +26,16 @@ const FavoriteHeroesContext = createContext<FavoriteHeroesContextData>(
 
 const FavoriteHeroesProvider = ({ children }: FavoriteHeroesProviderProps) => {
   const getFavoriteHeroes = useCallback((): HeroData[] => {
-    const storagedHeroes = localStorage.getItem(storageKey);
+    const storagedHeroes = getStorageItem(storageKey);
 
-    if (storagedHeroes) return JSON.parse(storagedHeroes);
-
-    return [];
+    return storagedHeroes || [];
   }, []);
 
   const addFavoriteHero = useCallback(
     (heroData: HeroData) => {
       const favoriteHeroes = getFavoriteHeroes();
-      const newFavoriteHeroes = [...favoriteHeroes, heroData];
 
-      localStorage.setItem(storageKey, JSON.stringify(newFavoriteHeroes));
+      setStorageItem(storageKey, [...favoriteHeroes, heroData]);
     },
     [getFavoriteHeroes]
   );
@@ -49,7 +47,7 @@ const FavoriteHeroesProvider = ({ children }: FavoriteHeroesProviderProps) => {
         hero => hero.heroId !== id
       );
 
-      localStorage.setItem(storageKey, JSON.stringify(newFavoriteHeroes));
+      setStorageItem(storageKey, newFavoriteHeroes);
     },
     [getFavoriteHeroes]
   );
