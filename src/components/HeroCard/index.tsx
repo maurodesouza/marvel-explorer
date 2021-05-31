@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { useRouter } from 'next/router';
 
 import { Favorite as FavoriteIcon } from '@styled-icons/material/Favorite';
 import { FavoriteBorder as FavoteBorderIcon } from '@styled-icons/material/FavoriteBorder';
@@ -15,26 +16,38 @@ const HeroCard = ({ heroId, heroName, heroThumbnail }: HeroCardProps) => {
     addFavoriteHero,
   } = useFavoriteHeroes();
 
+  const { push } = useRouter();
+
   const [isFavorite, setIsFavorite] = useState(isFavoriteHero(heroId));
 
-  const handleAddToFavorite = useCallback(() => {
-    const heroData = {
-      heroId,
-      heroName,
-      heroThumbnail,
-    };
+  const handleAddToFavorite = useCallback(
+    (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+      e.stopPropagation();
 
-    addFavoriteHero(heroData);
-    setIsFavorite(true);
-  }, [heroId, heroName, heroThumbnail, addFavoriteHero]);
+      const heroData = {
+        heroId,
+        heroName,
+        heroThumbnail,
+      };
 
-  const handleRemoveFromFavorite = useCallback(() => {
-    removeFavoriteHero(heroId);
-    setIsFavorite(false);
-  }, [heroId, removeFavoriteHero]);
+      addFavoriteHero(heroData);
+      setIsFavorite(true);
+    },
+    [heroId, heroName, heroThumbnail, addFavoriteHero]
+  );
+
+  const handleRemoveFromFavorite = useCallback(
+    (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+      e.stopPropagation();
+
+      removeFavoriteHero(heroId);
+      setIsFavorite(false);
+    },
+    [heroId, removeFavoriteHero]
+  );
 
   return (
-    <S.Container>
+    <S.Container onClick={() => push(`/characters/${heroId}`)}>
       <S.HeroImage src={heroThumbnail} alt={heroName} />
       <S.HeroContent>
         <S.HeroName>{heroName}</S.HeroName>

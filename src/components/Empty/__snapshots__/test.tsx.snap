@@ -28,7 +28,7 @@ exports[`<Empty /> should render the empty styles correct 1`] = `
   text-align: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:450px) {
   .c2 {
     font-size: 2.4rem;
   }

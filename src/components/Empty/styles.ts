@@ -20,7 +20,7 @@ export const Content = styled.div`
     max-width: 40rem;
     text-align: center;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('small')`
       font-size: ${theme.font.sizes.large};
     `}
   `}
