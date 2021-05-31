@@ -9,6 +9,7 @@ const props = {
   description:
     'Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.',
   wikiLink: 'https://google.com',
+  thumbnail: 'https://somelink.com',
   comics: 123,
   series: 1234,
   stories: 12345,

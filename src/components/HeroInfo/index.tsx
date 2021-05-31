@@ -4,6 +4,7 @@ import { Favorite as FavoriteIcon } from '@styled-icons/material/Favorite';
 import { FavoriteBorder as FavoriteBorderIcon } from '@styled-icons/material/FavoriteBorder';
 
 import * as S from './styles';
+import { useFavoriteHeroes } from 'hooks/useFavoriteHeroes';
 
 export type HeroInfoProps = {
   name: string;
@@ -13,25 +14,42 @@ export type HeroInfoProps = {
   stories: number;
   description?: string;
   wikiLink: string;
+  thumbnail: string;
 };
 
 const HeroInfo = ({
+  id,
   name,
   description,
+  thumbnail,
   wikiLink,
   comics,
   series,
   stories,
 }: HeroInfoProps) => {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const {
+    isFavoriteHero,
+    removeFavoriteHero,
+    addFavoriteHero,
+  } = useFavoriteHeroes();
+
+  const [isFavorite, setIsFavorite] = useState(isFavoriteHero(id));
 
   const handleAddToFavorite = useCallback(() => {
+    const heroData = {
+      heroId: id,
+      heroName: name,
+      heroThumbnail: thumbnail,
+    };
+
     setIsFavorite(true);
-  }, []);
+    addFavoriteHero(heroData);
+  }, [addFavoriteHero, id, name, thumbnail]);
 
   const handleRemoveFromFavorite = useCallback(() => {
     setIsFavorite(false);
-  }, []);
+    removeFavoriteHero(id);
+  }, [removeFavoriteHero, id]);
 
   return (
     <S.Container>
