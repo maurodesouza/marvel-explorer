@@ -55,6 +55,18 @@ const GlobalStyles = createGlobalStyle`
     body {
       background: ${theme.colors.black};
       overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        width: 1.2rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: ${theme.colors.secondary};
+      }
     }
 
     #__next {
