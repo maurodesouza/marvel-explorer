@@ -3,7 +3,6 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { renderWithProviders } from 'utils/test/helpers';
 
-import { storageKey } from 'hooks/useFavoriteHeroes';
 import HeroCard from '.';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -46,12 +45,10 @@ describe('<HeroCard />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should add hero to favorites', () => {
+  it('should alter icon between add/remove favorite', () => {
     renderWithProviders(<HeroCard {...heroData} />);
 
-    const addToFavoriteElement = screen.getByLabelText(
-      /add hero to favorites/i
-    );
+    let addToFavoriteElement = screen.getByLabelText(/add hero to favorites/i);
 
     expect(addToFavoriteElement).toBeInTheDocument();
     fireEvent.click(addToFavoriteElement);
@@ -63,32 +60,12 @@ describe('<HeroCard />', () => {
     expect(removeFromFavoriteElement).toBeInTheDocument();
     expect(addToFavoriteElement).not.toBeInTheDocument();
 
-    const storagedHero = JSON.parse(window.localStorage.getItem(storageKey)!);
-
-    expect(storagedHero).toEqual([heroData]);
-  });
-
-  it('should remove hero to favorites', () => {
-    window.localStorage.setItem(storageKey, JSON.stringify([heroData]));
-
-    renderWithProviders(<HeroCard {...heroData} />);
-
-    const removeFromFavoriteElement = screen.getByLabelText(
-      /remove hero to favorites/i
-    );
-
-    expect(removeFromFavoriteElement).toBeInTheDocument();
     fireEvent.click(removeFromFavoriteElement);
 
-    const addToFavoriteElement = screen.getByLabelText(
-      /add hero to favorites/i
-    );
+    addToFavoriteElement = screen.getByLabelText(/add hero to favorites/i);
 
     expect(removeFromFavoriteElement).not.toBeInTheDocument();
     expect(addToFavoriteElement).toBeInTheDocument();
-
-    const storagedHero = JSON.parse(window.localStorage.getItem(storageKey)!);
-    expect(storagedHero).toEqual([]);
   });
 
   it('should navigate to hero page', () => {
