@@ -46,6 +46,7 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
   ${({ theme }) => css`
     flex: 1;
+    width: 100%;
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.xsmall};
     color: ${theme.colors.black};
