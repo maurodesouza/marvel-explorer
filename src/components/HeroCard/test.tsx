@@ -1,8 +1,18 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import { fireEvent, screen } from '@testing-library/react';
 import { renderWithProviders } from 'utils/test/helpers';
 
 import { storageKey } from 'hooks/useFavoriteHeroes';
 import HeroCard from '.';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+const push = jest.fn();
+
+useRouter.mockImplementation(() => ({
+  push,
+}));
 
 const heroData = {
   heroId: 123,
@@ -79,5 +89,15 @@ describe('<HeroCard />', () => {
 
     const storagedHero = JSON.parse(window.localStorage.getItem(storageKey)!);
     expect(storagedHero).toEqual([]);
+  });
+
+  it('should navigate to hero page', () => {
+    const { container } = renderWithProviders(<HeroCard {...heroData} />);
+
+    const heroCard = container.firstChild!;
+    fireEvent.click(heroCard);
+
+    expect(push).toBeCalledTimes(1);
+    expect(push).toBeCalledWith(`/characters/${heroData.heroId}`);
   });
 });
