@@ -80,15 +80,7 @@ const FavoriteHeroesProvider = ({ children }: FavoriteHeroesProviderProps) => {
   );
 };
 
-const useFavoriteHeroes = (): FavoriteHeroesContextData => {
-  const context = useContext(FavoriteHeroesContext);
-
-  if (!context)
-    throw new Error(
-      'useFavoriteHeroes must be used within a FavoriteHeroesProvider'
-    );
-
-  return context;
-};
+const useFavoriteHeroes = (): FavoriteHeroesContextData =>
+  useContext(FavoriteHeroesContext);
 
 export { useFavoriteHeroes, FavoriteHeroesProvider };
