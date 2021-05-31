@@ -1,11 +1,10 @@
 import { useCallback, useState } from 'react';
 import axios from 'axios';
 
-import Empty from 'components/Empty';
-import Footer from 'components/Footer';
+import BaseTemplate from '../Base';
 
+import Empty from 'components/Empty';
 import Heading from 'components/Heading';
-import Menu from 'components/Menu';
 
 import Search from 'components/Search';
 import ShowWhen from 'components/ShowWhen';
@@ -51,8 +50,7 @@ const HomeTemplate = () => {
   }, []);
 
   return (
-    <S.Container>
-      <Menu />
+    <BaseTemplate>
       <Heading>Search for your favorites Marvel heroes</Heading>
       <Search error={error} onSubmit={handleSearch} />
 
@@ -83,8 +81,7 @@ const HomeTemplate = () => {
           </HeroesGrid>
         </ShowWhen>
       </S.Results>
-      <Footer />
-    </S.Container>
+    </BaseTemplate>
   );
 };
 
