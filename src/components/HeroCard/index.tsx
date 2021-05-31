@@ -6,6 +6,7 @@ import { FavoriteBorder as FavoteBorderIcon } from '@styled-icons/material/Favor
 
 import { useFavoriteHeroes, HeroData } from 'hooks/useFavoriteHeroes';
 import * as S from './styles';
+import Image from 'next/image';
 
 export type HeroCardProps = HeroData;
 
@@ -48,17 +49,24 @@ const HeroCard = ({ heroId, heroName, heroThumbnail }: HeroCardProps) => {
 
   return (
     <S.Container onClick={() => push(`/characters/${heroId}`)}>
-      <S.HeroImage src={heroThumbnail} alt={heroName} />
+      <S.ImageWrapper>
+        <Image
+          src={heroThumbnail}
+          layout="fill"
+          objectFit="cover"
+          alt={heroName}
+        />
+      </S.ImageWrapper>
       <S.HeroContent>
         <S.HeroName>{heroName}</S.HeroName>
 
         {isFavorite ? (
           <S.IconWrapper onClick={handleRemoveFromFavorite}>
-            <FavoteBorderIcon aria-label="Remove hero to favorites" />
+            <FavoriteIcon aria-label="Remove hero to favorites" />
           </S.IconWrapper>
         ) : (
           <S.IconWrapper onClick={handleAddToFavorite}>
-            <FavoriteIcon aria-label="Add hero to favorites" />
+            <FavoteBorderIcon aria-label="Add hero to favorites" />
           </S.IconWrapper>
         )}
       </S.HeroContent>

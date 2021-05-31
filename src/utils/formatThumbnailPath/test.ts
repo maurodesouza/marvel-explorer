@@ -1,7 +1,7 @@
 import { formatThumbnailPath } from '.';
 
 describe('formatThumbnailPath', () => {
-  it('should render the {{ name }}', () => {
+  it('should format the object in a string', () => {
     const datas = {
       path: 'path',
       extension: 'jpg',

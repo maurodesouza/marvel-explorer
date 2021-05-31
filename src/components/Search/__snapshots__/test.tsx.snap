@@ -35,6 +35,7 @@ exports[`<Search /> should render the search styles correct 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  width: 100%;
   background-color: #FFF;
   padding: 1.2rem;
   color: #202020;

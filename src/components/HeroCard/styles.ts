@@ -26,11 +26,40 @@ export const Container = styled.div`
   `}
 `;
 
-export const HeroImage = styled.img`
-  width: 100%;
-  height: 17rem;
-  flex-shrink: 0;
-  object-fit: cover;
+export const ImageWrapper = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    height: 17rem;
+    flex-shrink: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      box-sizing: border-box;
+      top: calc(50% - 1.6rem);
+      left: calc(50% - 1.6rem);
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 10rem;
+      border-width: 4px;
+      border-style: solid;
+      border-color: ${theme.colors.black};
+      border-top-color: ${theme.colors.secondary};
+      animation: spin 1s ease infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(720deg);
+      }
+    }
+  `}
 `;
 
 export const HeroContent = styled.div`

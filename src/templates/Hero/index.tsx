@@ -19,7 +19,7 @@ export type HeroTemplateProps = {
   thumbnail: string;
 };
 
-const Hero = ({ thumbnail, ...rest }: HeroTemplateProps) => {
+const Hero = (props: HeroTemplateProps) => {
   const { isFallback } = useRouter();
 
   return (
@@ -31,11 +31,11 @@ const Hero = ({ thumbnail, ...rest }: HeroTemplateProps) => {
       ) : (
         <>
           <S.ThumbnailWrapper>
-            <Image src={thumbnail} layout="fill" objectFit="cover" />
+            <Image src={props.thumbnail} layout="fill" objectFit="cover" />
           </S.ThumbnailWrapper>
 
           <S.InfoWrapper>
-            <HeroInfo {...rest} />
+            <HeroInfo {...props} />
           </S.InfoWrapper>
         </>
       )}
