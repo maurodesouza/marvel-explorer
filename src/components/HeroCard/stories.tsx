@@ -13,4 +13,8 @@ export default {
   },
 } as Meta<HeroCardProps>;
 
-export const Basic: Story<HeroCardProps> = args => <HeroCard {...args} />;
+export const Basic: Story<HeroCardProps> = args => (
+  <div style={{ width: '100%', maxWidth: '18rem' }}>
+    <HeroCard {...args} />
+  </div>
+);
