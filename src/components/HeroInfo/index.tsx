@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 import { Favorite as FavoriteIcon } from '@styled-icons/material/Favorite';
-import { FavoriteBorder as FavoteBorderIcon } from '@styled-icons/material/FavoriteBorder';
+import { FavoriteBorder as FavoriteBorderIcon } from '@styled-icons/material/FavoriteBorder';
 
 import * as S from './styles';
 
@@ -40,11 +40,11 @@ const HeroInfo = ({
 
         {isFavorite ? (
           <S.IconWrapper onClick={handleRemoveFromFavorite}>
-            <FavoteBorderIcon aria-label="Remove hero to favorites" />
+            <FavoriteIcon aria-label="Remove hero to favorites" />
           </S.IconWrapper>
         ) : (
           <S.IconWrapper onClick={handleAddToFavorite}>
-            <FavoriteIcon aria-label="Add hero to favorites" />
+            <FavoriteBorderIcon aria-label="Add hero to favorites" />
           </S.IconWrapper>
         )}
 

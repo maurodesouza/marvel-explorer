@@ -62,11 +62,11 @@ const HeroCard = ({ heroId, heroName, heroThumbnail }: HeroCardProps) => {
 
         {isFavorite ? (
           <S.IconWrapper onClick={handleRemoveFromFavorite}>
-            <FavoteBorderIcon aria-label="Remove hero to favorites" />
+            <FavoriteIcon aria-label="Remove hero to favorites" />
           </S.IconWrapper>
         ) : (
           <S.IconWrapper onClick={handleAddToFavorite}>
-            <FavoriteIcon aria-label="Add hero to favorites" />
+            <FavoteBorderIcon aria-label="Add hero to favorites" />
           </S.IconWrapper>
         )}
       </S.HeroContent>
