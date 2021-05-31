@@ -5,7 +5,7 @@
   <p align="center">
     <a href="https://marvel-explorer.vervel.app">💻 Site</a> &#xa0; | &#xa0;
     <a href="https://stories-marvel-explorer.vercel.app/?path=/story/herocard--basic">📚 Stories</a> &#xa0; | &#xa0;
-    <a href="https://www.figma.com/file/jvrp05F09b0q48uwxkLX7u/?node-id=0%3A1">🎨 Design</a>
+    <a href="https://www.figma.com/file/jvrp05F09b0q48uwxkLX7u/Marvel?node-id=0%3A1">🎨 Design</a>
   </p>
 </div>
 
