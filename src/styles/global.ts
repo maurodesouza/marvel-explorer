@@ -54,6 +54,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       background: ${theme.colors.black};
+      overflow-x: hidden;
     }
 
     #__next {
