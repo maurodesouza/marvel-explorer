@@ -39,7 +39,7 @@
 
 O Marvel Explorer é um projeto que foi desenvolvido para o desafio front end da [FPass](https://fpass.com.br)!
 
-O desafio consite em criar um pequeno app utilizando a [API da Marvel](https://developer.marvel.com) para que no mínimo pesquise/liste os heróis pelo nome.
+O desafio consiste em criar um pequeno app utilizando a [API da Marvel](https://developer.marvel.com) para que no mínimo pesquise/liste os heróis pelo nome.
 
 Para fazer o app utilizei o [Nextjs](https://nextjs.org) para criar toda a interface, [Storybook](https://storybook.js.org) para fazer a documentação dos componentes, e para os teste, [Jest](https://jestjs.io) com [Testing Library](https://testing-library.com/docs/dom-testing-library/intro/), e tudo isso com [Typescript](https://www.typescriptlang.org) ❤
 
