@@ -46,11 +46,11 @@ Para fazer o app utilizei o [Nextjs](https://nextjs.org) para criar toda a inter
 ## :rocket: Principais tecnologias ##
 
 <a href="https://nextjs.org">
-  <img width="40" title="Next" alt="Logo do Next" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/next-logo.png">
+  <img width="40" title="Next" alt="Logo do Next" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/next-logo.svg">
 </a> &#xa0; &#xa0;
 
 <a href="https://www.typescriptlang.org">
-  <img width="40" title="Typescript" alt="Logo do Typescript" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/typescript-logo.png">
+  <img width="40" title="Typescript" alt="Logo do Typescript" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/typescript-logo.svg">
 </a> &#xa0; &#xa0;
 
 <a href="https://styled-components.com">
@@ -58,11 +58,11 @@ Para fazer o app utilizei o [Nextjs](https://nextjs.org) para criar toda a inter
 </a> &#xa0; &#xa0;
 
 <a href="https://storybook.js.org">
-  <img width="40" title="Storybook" alt="Logo do Storybook" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/storybook-logo.png">
+  <img width="40" title="Storybook" alt="Logo do Storybook" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/storybook-logo.svg">
 </a> &#xa0; &#xa0;
 
 <a href="https://jestjs.io">
-  <img width="40" title="Jest" alt="Logo do Jest" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/jest-logo.png">
+  <img width="40" title="Jest" alt="Logo do Jest" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/master/assets/jest-logo.svg">
 </a> &#xa0; &#xa0;
 
 <a href="https://testing-library.com/docs/dom-testing-library/intro/">
